@@ -5,31 +5,6 @@ import Badge from "@material-ui/core/Badge";
 export default class Product extends Component {
   state = { values: [{ name: null, cost: null, link: null }] };
 
-  //   createUI() {
-  //     return this.state.values.map((el, i) => (
-  //       <div key={i}>
-  //         <input
-  //           type="text"
-  //           value={el.name || ""}
-  //           name="name"
-  //           onChange={this.handleChange.bind(this, i)}
-  //         />
-  //         <input
-  //           type="number"
-  //           value={el.cost || ""}
-  //           name="cost"
-  //           onChange={this.handleChange.bind(this, i)}
-  //         />
-  //         <input
-  //           type="text"
-  //           value={el.link || ""}
-  //           name="link"
-  //           onChange={this.handleChange.bind(this, i)}
-  //         />
-  //       </div>
-  //     ));
-  //   }
-
   handleChange(i, event) {
     let values = [...this.state.values];
     const { name, value } = event.target;
@@ -45,7 +20,7 @@ export default class Product extends Component {
 
   removeClick(i) {
     let values = [...this.state.values];
-    values.splice(i, 1);
+    values.splice(-1, 1);
     this.setState({ values });
   }
 
@@ -99,12 +74,22 @@ export default class Product extends Component {
         ))}
         <Row>
           <Col md="2">
-            <Button outline color="primary" onClick={() => this.addClick()}>
+            <Button
+              className="button-without-border"
+              outline
+              color="primary"
+              onClick={() => this.addClick()}
+            >
               Add Products +
             </Button>
           </Col>
           <Col md="2">
-            <Button outline color="danger" onClick={() => this.removeClick()}>
+            <Button
+              className="button-without-border"
+              outline
+              color="secondary"
+              onClick={() => this.removeClick()}
+            >
               Remove
             </Button>
           </Col>

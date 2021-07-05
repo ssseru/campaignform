@@ -1,3 +1,9 @@
 * {
   background-color: whitesmoke;
 }
+
+.button-without-border {
+  padding: 2px;
+  border: none;
+  background: none;
+}

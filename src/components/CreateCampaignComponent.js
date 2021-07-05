@@ -3,6 +3,7 @@ import React from "react";
 import { Container, Row } from "reactstrap";
 
 import CampaignInfo from "./CampaignInfoComponent";
+import Deliverables from "./DeliverablesComponent";
 import Product from "./ProductComponent";
 
 class CreateCampaign extends React.Component {
@@ -15,6 +16,7 @@ class CreateCampaign extends React.Component {
         </Row>
         <CampaignInfo />
         <Product />
+        <Deliverables />
       </Container>
     );
   }
