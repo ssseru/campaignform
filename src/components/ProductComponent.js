@@ -33,11 +33,16 @@ export default class Product extends Component {
             {"  "}Product/Service
           </h4>
         </Row>
-        <Row>
-          <Col md="2">Product Name</Col>
-          <Col md="2">Cost</Col>
-          <Col md="2">Product Link</Col>
-        </Row>
+        {this.state.values.length > 0 ? (
+          <Row>
+            <Col md="2">Product Name</Col>
+            <Col md="2">Cost</Col>
+            <Col md="2">Product Link</Col>
+          </Row>
+        ) : (
+          ""
+        )}
+
         {this.state.values.map((el, i) => (
           <div key={i}>
             <Row>
