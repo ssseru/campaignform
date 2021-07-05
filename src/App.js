@@ -1,7 +1,12 @@
-import "./App.css";
+import CreateCampaign from "./components/CreateCampaignComponent";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  return <div className="App">App</div>;
+  return (
+    <div>
+      <CreateCampaign />
+    </div>
+  );
 }
 
 export default App;
