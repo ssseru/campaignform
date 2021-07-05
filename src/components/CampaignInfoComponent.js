@@ -8,9 +8,7 @@ export default class CampaignInfo extends Component {
       <Form>
         <Row>
           <h4>
-            <Badge color="primary" pill>
-              1.
-            </Badge>
+            <Badge color="primary">1.</Badge>
             {"  "}Campaign Info
           </h4>
         </Row>

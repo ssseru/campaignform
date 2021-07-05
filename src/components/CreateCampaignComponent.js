@@ -11,7 +11,7 @@ class CreateCampaign extends React.Component {
       <Container>
         <br />
         <Row>
-          <h1>Create Campaign</h1>
+          <h1 className="App-header">Create Campaign</h1>
         </Row>
         <CampaignInfo />
         <Product />

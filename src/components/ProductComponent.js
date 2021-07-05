@@ -5,30 +5,30 @@ import Badge from "@material-ui/core/Badge";
 export default class Product extends Component {
   state = { values: [{ name: null, cost: null, link: null }] };
 
-  createUI() {
-    return this.state.values.map((el, i) => (
-      <div key={i}>
-        <input
-          type="text"
-          value={el.name || ""}
-          name="name"
-          onChange={this.handleChange.bind(this, i)}
-        />
-        <input
-          type="number"
-          value={el.cost || ""}
-          name="cost"
-          onChange={this.handleChange.bind(this, i)}
-        />
-        <input
-          type="text"
-          value={el.link || ""}
-          name="link"
-          onChange={this.handleChange.bind(this, i)}
-        />
-      </div>
-    ));
-  }
+  //   createUI() {
+  //     return this.state.values.map((el, i) => (
+  //       <div key={i}>
+  //         <input
+  //           type="text"
+  //           value={el.name || ""}
+  //           name="name"
+  //           onChange={this.handleChange.bind(this, i)}
+  //         />
+  //         <input
+  //           type="number"
+  //           value={el.cost || ""}
+  //           name="cost"
+  //           onChange={this.handleChange.bind(this, i)}
+  //         />
+  //         <input
+  //           type="text"
+  //           value={el.link || ""}
+  //           name="link"
+  //           onChange={this.handleChange.bind(this, i)}
+  //         />
+  //       </div>
+  //     ));
+  //   }
 
   handleChange(i, event) {
     let values = [...this.state.values];
@@ -54,9 +54,7 @@ export default class Product extends Component {
       <Form>
         <Row>
           <h4>
-            <Badge color="primary" pill>
-              2.
-            </Badge>
+            <Badge color="primary">2.</Badge>
             {"  "}Product/Service
           </h4>
         </Row>
