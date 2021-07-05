@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Container } from "reactstrap";
-import { Form, Row, FormGroup, Label, Col, Input, Button } from "reactstrap";
+import { Form, Row, Col, Button } from "reactstrap";
 import CampaignInfo from "./CampaignInfoComponent";
 import Deliverables from "./DeliverablesComponent";
 import Product from "./ProductComponent";

@@ -1,14 +1,5 @@
 import React, { Component } from "react";
-import {
-  Form,
-  Row,
-  FormGroup,
-  Label,
-  Col,
-  Input,
-  Button,
-  FormText,
-} from "reactstrap";
+import { Form, Row, FormGroup, Label, Col, Input } from "reactstrap";
 import Badge from "@material-ui/core/Badge";
 
 import InfoIcon from "@material-ui/icons/Info";
@@ -45,7 +36,7 @@ export default class References extends Component {
     let { imagePreviewUrl } = this.state;
     let $imagePreview = null;
     if (imagePreviewUrl) {
-      $imagePreview = <img src={imagePreviewUrl} />;
+      $imagePreview = <img src={imagePreviewUrl} alt="uploaded" />;
     } else {
       $imagePreview = (
         <div className="previewText">Please select an Image for Preview</div>
